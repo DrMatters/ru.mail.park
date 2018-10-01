@@ -1,0 +1,13 @@
+{% if pages.num_pages > 1 %}
+		<nav aria-label="answers-paginator">
+            <ul class="pagination my-btn">
+            	{% if pages.has_previous %}
+              <li class="active"><a href="?page={{ pages.previous_page_number }}">prev.<span class="sr-only">(current)</span></a></li>
+              	{% endif %}
+              <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true"> {{ pages.nubmer }}</span></a></li>
+              	{% if pages.has_next %}
+              <li class="active"><a href="?page={{ pages.next_page_number }}">next.<span class="sr-only">(current)</span></a></li>
+              	{% endif %}
+            </ul>
+         </nav>
+{% endif %}

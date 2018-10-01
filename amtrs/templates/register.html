@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+
+{% block main-content %}
+          <p>
+            <div class="alert alert-danger" role="alert">
+              Sorry, this email address is already taken!
+            </div>
+          </p>
+          <p>
+            <form method="post" enctype="multipart/form-data">
+              <div class="form-group">
+                <label for="loginRegisterInput">Login</label>
+                <input type="text" class="form-control my-btn" id="loginRegisterInput"
+                       placeholder="Login" required="required" maxlength="20">
+              </div>
+              <div class="form-group">
+                <label for="emailRegisterInput">Email address</label>
+                <input type="email" class="form-control my-btn" id="emailRegisterInput"
+                       placeholder="Email" required="required" maxlength="25">
+              </div>
+              <div class="form-group">
+                <label for="nicknameRegisterInput">Nickname</label>
+                <input type="text" class="form-control my-btn" id="nicknameRegisterInput"
+                       placeholder="Nickname" required="required" maxlength="15">
+              </div>
+              <div class="form-group">
+                <label for="passwordRegisterInput">Password</label>
+                <input type="password" class="form-control my-btn" id="passwordRegisterInput"
+                       placeholder="Password" required="required" maxlength="25"  >
+              </div>
+              <div class="form-group">
+                <label for="passwordRepeatInput">Repeat password</label>
+                <input type="password" class="form-control my-btn" id="passwordRepeatInput" placeholder="Repeat your password">
+              </div>
+              <div class="form-group">
+                <label for="avatarRegisterInput">Load avatar</label>
+                <input type="file" id="avatarRegisterInput" accept="image/jpeg,image/png,image/gif">
+                <p class="help-block">Load your avatar</p>
+              </div>
+              <button type="submit" class="btn btn-default my-btn" id="register-btn">Register</button>
+            </form>
+          </p>
+{% endblock main-content %}
+
+
+
+{% block script-addition %}
+    <script src="/js/passwordValidator.js" type="text/javascript"></script>
+{% endblock script-addition %}}

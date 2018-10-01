@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block main-content %}
+          <p>
+            <div class="alert alert-danger" role="alert"> Sorry, wrong password!</div>
+          </p>
+          <p>
+            <form id="login-form" method="POST">
+                {% csrf_token %}
+              {{form}}
+              <button type="submit" class="btn btn-default my-btn">Log in</button>
+            </form>
+          </p>
+          <p>
+            <h4>
+              <a href="{% url 'register' %}">
+                create new account
+              </a>
+            </h4>
+          </p>
+{% endblock %}

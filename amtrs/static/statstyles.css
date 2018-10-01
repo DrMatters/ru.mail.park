@@ -1,0 +1,97 @@
+.navbar-brand.logo {
+	font-family: 'Baloo Bhaina', cursive;
+	font-size: 40px;
+	color: black;
+}
+.my-btn {
+	background-color: white;
+	border-color: black;
+	border-radius: 0px;
+	box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.66);
+}
+#search-bar {
+	margin-top: auto;
+}
+body > .container {
+	padding-top: 90px;
+}
+.navbar-btn {
+	margin-left: 15px;
+}
+.navbar-right {
+	border-left: 1px solid #e7e7e7;
+}
+#navbar-avatar {
+	max-height: 50px;
+}
+.thumbnail.navbar-avatar-surrounding {
+	padding: 2px;
+	border-radius: 0px;
+	margin-left: 15px;
+	margin-top: 4px;
+	margin-bottom: 8px;
+}
+.btn-margin {
+	margin-bottom: 4px;
+}
+.question-avatar {
+	max-height: 110px;
+	max-width: 110px;
+}
+.question {
+	background-color: #ececec;
+	padding: 5px;
+	border: 2px outset black;
+}
+.answer {
+	background-color: #ececec;
+	padding: 5px;
+	border: 2px outset black;
+	margin-left: 25px;
+}
+.vote-for {
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;  
+}
+.no-top-margin {
+	margin-top: 0px;
+}
+/* bootstrap's css */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+  border-top: 1px outset black;
+}
+#question-list {
+	margin-left: 1px;
+	margin-right: 1px;
+}
+#answerSubmit {
+	float: right;
+	margin-top: 4px;
+	margin-bottom: 10px;
+}
+#register-btn {
+	color: white;
+	background-color: black;
+}
+textarea {
+	resize: none;
+}
+.alert {
+	border: 1px solid red;
+	border-radius: 3px;
+}

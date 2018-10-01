@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>amtrs - answers matters</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- stylosa -->
+    <link href="statstyles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via <fieldset></fieldset>le:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle my-btn collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="//amt.rs">amt<span id="curved-text">rs</span></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+              <form class="navbar-form navbar-left">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control my-btn" placeholder="Search">
+                    <span class="input-group-btn navbar-btn">
+                      <button type="submit" class="btn my-btn">Ask!</button>
+                    </span>
+                  </div>
+                </div>
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <form action="#" id="navbarLoginLink">
+                    <button type="submit" class="btn my-btn navbar-btn" form="navbarLoginLink">
+                      <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Log in
+                    </button>
+                  </form>
+                </li>
+                <li>
+                  <form action="./register.html" id="navbarRegisterLink">
+                    <button type="submit" class="btn my-btn navbar-btn" form="navbarRegisterLink">Register</button>
+                  </form>
+                </li>
+              </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+    <div class="container">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="row marketing" id="question-list">
+        <div class="col-lg-1">
+        <!-- empty -->
+        </div>
+        <div class="col-lg-8">
+          <p>
+            <h2>
+              Log in
+            </h2>
+          </p>
+          <p>
+            <div class="alert alert-danger" role="alert"> Sorry, wrong password!</div>
+          </p>
+          <p>
+            <form>
+              <div class="form-group">
+                <label for="loginInput">Login</label>
+                <input type="text" class="form-control my-btn" id="loginInput" placeholder="Login">
+              </div>
+              <div class="form-group">
+                <label for="passwordInput">Password</label>
+                <input type="password" class="form-control my-btn" id="passwordInput" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-default my-btn">Log in</button>
+            </form>
+          </p>
+          <p>
+            <h4>
+              <a href="./register.html">
+                create new account
+              </a>
+            </h4>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <h3>Popular tags</h3>
+          <hr>
+          <p>
+            <a type="button" href="#" class="btn btn-default btn-margin my-btn">Popular tag</a>
+            <a type="button" href="#" class="btn btn-default btn-margin my-btn">More popular tag</a>
+            <a type="button" href="#" class="btn btn-default btn-margin my-btn">Another popular tag</a>
+          </p>
+          <hr>
+          <h3>Best users</h3>
+          <p>
+            <a type="button" href="#" class="btn btn-default btn-margin my-btn">Donald Trump</a>
+            <a type="button" href="#" class="btn btn-default btn-margin my-btn">Bender</a>
+            <a type="button" href="#" class="btn btn-default btn-margin my-btn">Dan Simmons</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted lead" align="center">
+          <a href="#">
+            developer:
+          </a>
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

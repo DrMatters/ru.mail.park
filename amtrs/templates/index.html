@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main-content %}
+    {% for q in questions %}
+            <div class="row question">
+              <div class="col-md-3">
+                <div>
+                    <img src="{% static q.author.avatar_link %}" alt="user avatar" class="img-thumbnail question-avatar" alt="avatar">
+                </div>
+                <div class="btn-group vote-for" role="group" aria-label="vote-for">
+                  <button type="button" class="btn btn-default btn-sm my-btn">
+                      <!-- vote up -->
+                    <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                  </button>
+                  <button disabled="disabled" type="button" class="btn btn-default btn-sm my-btn">
+                    {{ q.rating }}
+                  </button>
+                  <button type="button" class="btn btn-default btn-sm my-btn">
+                      <!-- vote down -->
+                        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-9">
+                  <h2 class="no-top-margin">
+                    {{ q.title }}
+                  </h2>
+                <p>
+                  {{ q.text }}
+                </p>
+                <ol class="list-inline lead">
+                  <li><a class="btn btn-default my-btn" href= "{% url 'question_details' q.id %}" role="button">Answer</a></li>
+                  <li>Tags:
+                      {% for tag in q.tags.all %}
+                        <a href="{% url 'tag_list' tag %}">{{tag}}</a>
+                      {% endfor %}
+                  </li>
+                </ol>
+              </div>
+            </div>
+    {% endfor %}
+
+{% endblock main-content %}
+
+
+{% block paginator %}
+    {% include "paginator.html" with pages=questions %}
+{% endblock paginator %}
